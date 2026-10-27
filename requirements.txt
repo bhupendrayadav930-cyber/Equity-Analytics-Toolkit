@@ -1,0 +1,16 @@
+# Core data stack (both projects)
+pandas>=2.2
+numpy>=1.26
+
+# backtest_engine
+scipy>=1.11            # pivot detection (scipy.signal.argrelextrema)
+yfinance>=0.2.40       # prices + fundamentals (default data source)
+requests>=2.31         # Dhan / Upstox REST adapters, screener.in provider
+pyarrow>=14.0          # Parquet price cache
+
+# trade_journal
+streamlit>=1.46        # dashboard UI
+openpyxl>=3.1          # reading the broker .xlsx export in ingest.py
+
+# Optional: only for ScreenerInFundamentalProvider
+beautifulsoup4>=4.12
